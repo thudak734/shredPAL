@@ -1,0 +1,55 @@
+# Ignore .env files
+.env
+
+# Ignore node_modules directory
+node_modules/
+
+# Compiled Files
+/build/
+/dist/
+*.log
+
+# Editor and IDE Files
+.idea/
+.vscode/
+.DS_Store
+
+# Dependency Management
+yarn.lock
+package-lock.json
+
+# Environment-specific Files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Temporary Files
+.tmp/
+.cache/
+
+# User-specific Files
+.history/
+.npm/
+
+# Compiled Code or Artifacts
+*.min.js
+*.min.css
+*.map
+coverage/
+
+# Credentials or Secrets
+*.pem
+*.key
+*.cer
+
+# Dependency Directories
+pip-cache/
+bower_components/
+composer/
+
+# Miscellaneous
+.log
+.lock
+.tmp/
+.idea/  # for JetBrains IDEs other than IntelliJ IDEA

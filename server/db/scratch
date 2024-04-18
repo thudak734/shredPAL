@@ -1,0 +1,13 @@
+CREATE TABLE reviews (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    workout_id BIGINT NOT NULL REFERENCES workouts(id),
+    name VARCHAR(50) NOT NULL,
+    review TEXT NOT NULL,
+    rating INT NOT NULL check(rating >=1 and rating <=5)
+);
+
+todo
+
+insert into reviews (workout_id, name, review, rating) values (1, 'rundc', 'you are my hero', 5);
+
+insert into reviews (workout_id, name, review, rating) values (1, 'OTFrando', 'you should be in the olympics!', 5);
